@@ -9,11 +9,11 @@ using mymovieapp.Models;
 
 namespace mymovieapp.Controllers
 {
-    public class ClienteController : Controller
+    public class ProductoController : Controller
     {
-        private readonly ILogger<ClienteController> _logger;
+        private readonly ILogger<ProductoController> _logger;
 
-        public ClienteController(ILogger<ClienteController> logger)
+        public ProductoController(ILogger<ProductoController> logger)
         {
             _logger = logger;
         }
@@ -24,7 +24,7 @@ namespace mymovieapp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([Bind("Nombre del prodcuto,Descripcion,Precio")] Cliente cleinte)
+        public IActionResult Create([Bind("Nombre del prodcuto,Descripcion,Precio")] Producto producto)
         {
             if (ModelState.IsValid)
             {
