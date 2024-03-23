@@ -6,33 +6,24 @@
     <h1 class="text-center mb-4">@ViewData["Title"]</h1>
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form asp-controller="Cliente" asp-action="Create" method="post">
+            <form asp-controller="Registrar Producto" asp-action="Create" method="post">
                 <div class="form-group">
-                    <label asp-for="Nombre" class="control-label"></label>
-                    <input asp-for="Nombre" class="form-control" />
-                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                    <label asp-for="Nombre del producto:" class="control-label"></label>
+                    <input asp-for="Nombre del producto" class="form-control" />
+                    <span asp-validation-for="Nombre del producto" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Apellido" class="control-label"></label>
-                    <input asp-for="Apellido" class="form-control" />
-                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                    <label asp-for="Descripcion del producto:" class="control-label"></label>
+                    <input asp-for="Descripcion del producto" class="form-control" />
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Telefono" class="control-label"></label>
-                    <input asp-for="Telefono" class="form-control" />
-                    <span asp-validation-for="Telefono" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="CorreoElectronico" class="control-label"></label>
-                    <input asp-for="CorreoElectronico" class="form-control" />
-                    <span asp-validation-for="CorreoElectronico" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="FechaNacimiento" class="control-label"></label>
-                    <input asp-for="FechaNacimiento" class="form-control" />
+                    <label asp-for="Precio" class="control-label"></label>
+                    <input asp-for="Precio" class="form-control" />
+                    <span asp-validation-for="Precio" class="text-danger"></span>
                 </div>
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                 </div>
             </form>
              <h1>@ViewData["Message"]</h1>
