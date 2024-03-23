@@ -24,13 +24,13 @@ namespace mymovieapp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([Bind("Nombre,Apellido,CorreoElectronico,Telefono,FechaNacimiento")] Cliente cliente)
+        public IActionResult Create([Bind("Nombre del prodcuto,Descripcion,Precio")] Cliente cleinte)
         {
             if (ModelState.IsValid)
             {
-                ViewData["Message"] = "El cliente se ha registrado";
-                if(cliente.Nombre.Equals("Juan") && cliente.Apellido.Equals("Perez") ){
-                    ViewData["Message"] = "El cliente Juan ud tiene un saldo de 5000";
+                ViewData["Message"] = "El producto se ha registrado";
+                if(producto.Nombre.Equals("arroz") && producto.Descripcion.Equals("arroz integral") ){
+                    ViewData["Message"] = "El producto esta registrado. El prodcuto tiene un IGV de: S/. 11.7999";
                 }
                 return View("Index");
             }
